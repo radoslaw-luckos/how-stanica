@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+.TextBox {
+    margin-bottom: $big;
+    margin-inline: 0;
+    max-width: 90%;
+    font-size: 12px;
+    padding: $big;
+    text-align: justify;
+    p{
+        margin-bottom: $small;
+    }
+}
+.TextBoxWithBg{
+    background-color:$white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}

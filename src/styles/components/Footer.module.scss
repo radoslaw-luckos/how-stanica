@@ -1,0 +1,15 @@
+@import '../variables.scss';
+
+.footer {
+    background-color: $navy;
+    color: $lightblue;
+    font-weight: 200;
+    font-size: 10px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,6 +1,9 @@
-import '../styles/globals.scss'
+import '../src/styles/globals.scss'
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
+import Navbar from '../src/components/Navigation/Navbar'
+import Footer from '../src/components/Footer/Footer'
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -10,11 +13,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="Strona internetowa Harcerskiego Ośrodka Wodnego Stanica" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>nav</h1>
-      <Component {...pageProps} />
-      <footer>
-        footer
-      </footer>
+      <div className='outerWrapper'>
+        <Navbar/>
+        <Component {...pageProps} />
+        <Footer/>
+      </div>
     </>
     )
 }

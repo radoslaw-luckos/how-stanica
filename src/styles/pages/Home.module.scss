@@ -1,0 +1,10 @@
+@import '../variables.scss';
+
+.innerWrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 70px - 40px);
+    overflow: auto;
+}
