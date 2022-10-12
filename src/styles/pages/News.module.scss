@@ -1,0 +1,23 @@
+@import '../variables.scss';
+
+.innerWrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 70px - 40px);
+    overflow: auto;
+}
+
+.list {
+    width: 90%;
+    list-style-type: none;
+}
+
+.loadMoreBtn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 20px;
+    cursor: pointer;
+}

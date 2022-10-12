@@ -19,7 +19,7 @@ const MobileNavList = (props: Props) => {
       </div>
       <ul>
         <li onClick={props.toogleNav}>
-          <Link href='/aktualności'>
+          <Link href='/aktualnosci'>
             <a>Aktualności</a>
           </Link>
         </li>

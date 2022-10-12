@@ -1,7 +1,7 @@
 import Image from 'next/future/image'
 import React from 'react'
 import styles from '../../styles/components/NearestEventCard.module.scss'
-import EventImage from '../../assets/images/nearest_event.jpg'
+import {nearestEvent} from '../../utils/placeholders'
 
 type Props = {}
 
@@ -14,9 +14,9 @@ const NearestEventCard = (props: Props) => {
         <div className={styles.rightDown}></div>
         <div className={styles.content}>
               <h1>Najbliższe wydarzenie</h1>
-              <Image src={EventImage} alt='Grafika wydarzenia' className={styles.image}/>
-              <h2>Lorem Ipsum</h2>
-              <p>Morbi neque sit vitae sit et enim. Amet montes, odio vitae tincidunt turpis gravida lectus velit, ac. Consequat enim, arcu, enim morbi quam arcu, ornare mi quis. Erat mi, egestas sed augue purus in sociis pellentesque. </p>
+              <Image src={nearestEvent.imageUrl} alt='Grafika wydarzenia' width={100} height={100} className={styles.image}/>
+              <h2>{nearestEvent.title}</h2>
+              <p>{nearestEvent.text}</p>
               <button>Dowiedz się więcej</button>
         </div>
     </div>
