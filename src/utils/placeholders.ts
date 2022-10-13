@@ -1,7 +1,30 @@
 export const greeting: string = `
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin et mauris integer fringilla augue. Lacus hendrerit phasellus molestie suscipit nisi, vestibulum facilisis. Pretium consequat at commodo lorem porta habitant suspendisse ac enim. Arcu vel aliquam turpis pellentesque. Commodo luctus consectetur ut euismod sed in id interdum. </p>
-        
-<p> Risus purus ante malesuada sed porttitor interdum nascetur phasellus. Diam ante pharetra, placerat penatibus leo odio sit amet, commodo. Nulla iaculis quisque pharetra sit scelerisque id. Eu justo, pharetra, nisl, facilisis mattis sit viverra ipsum ut. Porta rhoncus nibh hendrerit quis ante consequat non. </p>`
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin et mauris integer fringilla augue. Lacus hendrerit phasellus molestie suscipit nisi, vestibulum facilisis. Pretium consequat at commodo lorem porta habitant suspendisse ac enim. Arcu vel aliquam turpis pellentesque. Commodo luctus consectetur ut euismod sed in id interdum. </p><p> Risus purus ante malesuada sed porttitor interdum nascetur phasellus. Diam ante pharetra, placerat penatibus leo odio sit amet, commodo. Nulla iaculis quisque pharetra sit scelerisque id. Eu justo, pharetra, nisl, facilisis mattis sit viverra ipsum ut. Porta rhoncus nibh hendrerit quis ante consequat non. </p>`
+
+export const aboutContent: string = `
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin et mauris integer fringilla augue. Lacus hendrerit phasellus molestie suscipit nisi, vestibulum facilisis. Pretium consequat at commodo lorem porta habitant suspendisse ac enim. Arcu vel aliquam turpis pellentesque. Commodo luctus consectetur ut euismod sed in id interdum.
+</p><p> Risus purus ante malesuada sed porttitor interdum nascetur phasellus. Diam ante pharetra, placerat penatibus leo odio sit amet, commodo. Nulla iaculis quisque pharetra sit scelerisque id. Eu justo, pharetra, nisl, facilisis mattis sit viverra ipsum ut. Porta rhoncus nibh hendrerit quis ante consequat non.  </p>`
+
+export const offer1: string = `
+<p>Nasz ośrodek łączy pasje i pokolenia. Infrastruktura jest wykorzystana w głównej mierze na cele statutowe <strong>Związku Harcerstwa Polskiego </strong>, ale jesteśmy też otwarci na zewnętrzne inicjatywy.  
+Jeżeli chcesz wstąpić w szeregi “wodniaków” - sprawdź naszą <strong>zakładkę “O nas”</strong>. Tam znajdziesz opis i kontakt do opiekunów i instruktorów, którzy prowadzą poszczególne jednostki. </p><p>Nasz ośrodek świetnie się sprawdza przy organizacji: </p>
+
+`
+
+export const offer2: string = `
+<ul>
+<li>- Biwaków (również tych pod namiotami)</li>
+<li>- Ognisk integracyjnych  </li>
+<li>- Warsztatów  </li>
+<li>- Prezentacji </li>
+<li>- Konferencji</li>
+<li>- Kursów</li>
+<li>- Urodzin (nie tylko jednocyfrowych) </li>
+<li>- Komunii </li>
+<li>- Chrzcin</li>
+<li>- Spotkań w gronie rodziny i przyjaciół </li>
+</ul>
+`
 
 type News = {
     imageUrl: string,

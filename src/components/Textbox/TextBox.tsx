@@ -4,7 +4,7 @@ import styles from '../../styles/components/Textbox.module.scss';
 import DOMPurify from 'isomorphic-dompurify';
 
 type Props = {
-    withBackground: boolean;
+    withBackground?: boolean;
     content: string;
 }
 

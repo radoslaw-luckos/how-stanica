@@ -1,0 +1,33 @@
+@import '../variables.scss';
+
+.innerWrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 70px - 40px);
+    overflow-y: auto;
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: $big;
+    }
+    .heroImage{
+        width: 100vw;
+        height: 250px;
+        margin: $big 0;
+    }
+    .offerList {
+        width: 90%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        p {
+            width: 100%;
+            font-size: 12px;
+        }
+    }
+}
