@@ -1,7 +1,7 @@
 import Image from 'next/future/image'
 import React from 'react'
 import styles from '../../styles/components/NearestEventCard.module.scss'
-import {nearestEvent} from '../../utils/placeholders'
+import {nearestEvent} from '../../mocks/placeholders'
 
 type Props = {}
 

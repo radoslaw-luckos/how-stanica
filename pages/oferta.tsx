@@ -4,14 +4,14 @@ import Header from '../src/components/Header/Header'
 import TextBox from '../src/components/Textbox/TextBox'
 import OfferCard from '../src/components/Cards/OfferCard'
 import styles from '../src/styles/Pages/Offer.module.scss'
-import { offer1, offer2 } from '../src/utils/placeholders'
+import { offer1, offer2 } from '../src/mocks/placeholders'
 import offerHero from '../src/assets/images/offer.jpg'
 import boatIcon from '../src/assets/icons/icon-boat.svg'
 import campIcon from '../src/assets/icons/icon-camp.svg'
 import peopleIcon from '../src/assets/icons/icon-people.svg'
 import toolsIcon from '../src/assets/icons/icon-tools.svg'
 
-const Offer: NextPage = () => {
+const OfferPage: NextPage = () => {
     return (
       <main className={styles.innerWrapper}>
         <section>
@@ -49,4 +49,4 @@ const Offer: NextPage = () => {
 )
 }
 
-export default Offer
+export default OfferPage

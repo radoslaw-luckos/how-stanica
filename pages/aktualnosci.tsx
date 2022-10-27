@@ -2,11 +2,11 @@ import type { NextPage } from 'next'
 import NewsListItem from '../src/components/Cards/NewsListItem'
 import Header from '../src/components/Header/Header'
 import styles from '../src/styles/Pages/News.module.scss'
-import { newsList } from '../src/utils/placeholders'
+import { newsList } from '../src/mocks/placeholders'
 import More from '../src/assets/icons/more.svg'
 import Image from 'next/future/image';
 
-const News: NextPage = () => {
+const NewsPage: NextPage = () => {
 return (
   <main className={styles.innerWrapper}>
     <Header title='Aktualności'/>
@@ -27,4 +27,4 @@ return (
     </main>     
 )}
 
-export default News
+export default NewsPage
