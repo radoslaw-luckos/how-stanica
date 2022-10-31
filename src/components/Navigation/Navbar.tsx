@@ -1,25 +1,26 @@
-import React, {useState} from 'react';
-import Image from 'next/future/image';
-import StanicaLogo from '../../assets/icons/stanica_logo.svg';
+import React, {useState} from 'react'
+import Image from 'next/future/image'
 import HamburgerIcon from '../../assets/icons/hamburger_button.svg';
 import CrossIcon from '../../assets/icons/cross_mark.svg';
 import styles from '../../styles/components/Navigation.module.scss'
-import MobileNavList from './MobileNavList';
+import MobileNavList from './MobileNavList'
+import DesktopNavList from './DesktopNavList'
+import HOWBanner from './HOWBanner';
 
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
 
   const [isMobileNavOpened, setMobileNavOpened] = useState(false)
     
   return (
     <nav className={styles.Navbar}>
-        <div>{!isMobileNavOpened ? <Image src={StanicaLogo} alt="Logo HOW Stanica" height={50}/> : ""}
-        </div>
-        <div onClick={() => setMobileNavOpened(!isMobileNavOpened)}>
-            <Image src={isMobileNavOpened ? CrossIcon : HamburgerIcon} alt="Close/open menu" height={33}/>
+      <HOWBanner isMobileNavOpened={isMobileNavOpened}/>
+      <div
+        className={styles.hamburgerMenu}
+        onClick={() => setMobileNavOpened(!isMobileNavOpened)}>
+        <Image src={isMobileNavOpened ? CrossIcon : HamburgerIcon} alt="Close/open menu" height={33}/>
       </div>
-      {isMobileNavOpened ? <MobileNavList toogleNav={()=>setMobileNavOpened(!isMobileNavOpened)}/> : ""}
+      {isMobileNavOpened ? <MobileNavList toogleNav={() => setMobileNavOpened(!isMobileNavOpened)} /> : ""}
+      <DesktopNavList />
     </nav>
   )
 }

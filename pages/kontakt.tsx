@@ -5,6 +5,9 @@ import styles from '../src/styles/Pages/Contact.module.scss'
 import placeIcon from '../src/assets/icons/home.svg'
 import emailIcon from '../src/assets/icons/email.svg'
 import phoneIcon from '../src/assets/icons/phone.svg'
+import personIcon from '../src/assets/icons/person.svg'
+import messageIcon from '../src/assets/icons/write.svg'
+import bannerImage from '../src/assets/images/percent_banner.jpg'
 import Image from 'next/future/image'
   
 const KontaktPage: NextPage = () => {
@@ -40,8 +43,35 @@ return (
       </div>
     </section>
     <Header title='Napisz do nas!'/>
-    <section>
-
+    <section className={styles.contactForm}>
+      <form>
+        <div className={styles.inputContainer}>
+          <div className={styles.labelBox}>
+            <Image src={personIcon} alt={'name input icon'} className={styles.labelImage}/>
+            <label htmlFor={'name'}>Imię i nazwisko</label>
+          </div>
+          <input type='text' id={'name'} name={'name'}/>
+        </div>
+        <div className={styles.inputContainer}>
+          <div className={styles.labelBox}>
+            <Image src={emailIcon} alt={'mail input icon'}className={styles.labelImage}/>
+            <label htmlFor={'email'}>Adres mailowy</label>
+          </div>
+          <input type='text' id={'email'} name={'email'}/>
+        </div>
+        <div className={styles.inputContainer}>
+          <div className={styles.labelBox}>
+            <Image src={messageIcon} alt={'message input icon'} className={styles.labelImage}/>
+            <label htmlFor={'message'}>Treść wiadomości</label>
+          </div>
+          <textarea rows={5} name={'message'} id={'message'}/>
+        </div>
+        <button className={styles.submitButton}>Wyślij</button>
+      </form>
+    </section>
+    <Header title='Przekaż swój 1% podatku' />
+    <section className={styles.banner}>
+      <Image className={styles.bannerImage} src={bannerImage} alt={'Banner image'} width={100} height={100}/>
     </section>
   </main>  
 )

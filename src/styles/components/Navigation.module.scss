@@ -10,7 +10,7 @@
     height: 70px;
     background-color: $navy;
     position: relative;
-    .MobileList{
+    .mobileNavList{
         position: absolute;
         bottom: 0;
         left: 0;
@@ -36,6 +36,68 @@
                     font-family: $font-headers;
                 }
             }
+        }
+    }
+    .desktopNavList{
+        display: none;
+    }
+    .banner{
+        cursor: pointer;
+        .howName{
+            display: none;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .hamburgerMenu{
+        display: none;
+    }
+    .desktopNavList{
+        display: flex !important;
+        flex-flow: row nowrap;
+        align-items: center;
+        color: $white;
+        ul{
+            display: flex !important;
+            flex-flow: row nowrap;
+            margin-right: $big;
+            li {
+                margin: 0 $small;
+                font-weight: normal;
+                transition: all 300ms ease-in;
+                &:hover{
+                    font-weight: $font-bold;
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .desktopNavList{
+        ul{
+            li {
+                margin: 0 $big;
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .banner{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        .howName{
+            display: block !important;
+            margin-left: $small;
+            font-size: 20px;
+            font-family: $font-headers;
+            color: $white;
         }
     }
 }

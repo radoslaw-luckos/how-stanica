@@ -32,4 +32,57 @@
             }
         }
     }
+    .contactForm{
+        width: 90%;
+        .inputContainer{
+            width: 100%;
+            margin-bottom: $big;
+            margin-top: 0;
+            .labelBox {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                margin-bottom: $small;
+                min-width: 100%;
+                .labelImage{
+                    height:20px;
+                    width: auto;
+                }
+                label{
+                    width: 100%;
+                    margin-left: $small;
+                }
+            }
+            input, textarea {
+                width: 100%;
+                line-height: 32px;
+                background-color: $white;
+                outline: none;
+                border: none;
+                box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.3);
+                padding-left: $small;
+                resize: none;
+                font-size: 1rem;
+            }
+        }
+        .submitButton{
+            width: 50%;
+            background-color: $blue;
+            border: 2px solid black;
+            margin-bottom: $big;
+            padding: $small 0;
+            font-weight: $font-bold;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+    }
+    .banner {
+        width: 90%;
+        margin-bottom: $big;
+        .bannerImage {
+            width: 100%;
+            height: auto;
+        }
+    }
 }

@@ -11,7 +11,7 @@ type Props = {
 
 const MobileNavList = (props: Props) => {
   return (
-    <div className={styles.MobileList}>
+    <div className={styles.mobileNavList}>
       <div onClick={props.toogleNav}>
         <Link href='/'>
           <Image src={StanicaLogo} alt="Logo HOW Stanica" height={167}/>
