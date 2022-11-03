@@ -39,7 +39,9 @@ const MobileNavList = (props: Props) => {
           </Link>
         </li>
       </ul>
-      <Image src={HufiecLogo} alt="Baner hufca ZHP Wrocław Wschód" height={33}/>
+      <a href='http://wroclawwschod.zhp.pl/' target='_blank' rel="noreferrer">
+        <Image src={HufiecLogo} alt="Baner hufca ZHP Wrocław Wschód" height={33}/>
+      </a>
     </div>
     
   )
