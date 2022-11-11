@@ -16,7 +16,7 @@ const TextBox = (props: Props) => {
       })
 
     return (
-        <div
+        <article
           className={props.withBackground ? classNames(styles.TextBox, styles.TextBoxWithBg) : styles.TextBox}
           dangerouslySetInnerHTML={sanitizedData()}
         />

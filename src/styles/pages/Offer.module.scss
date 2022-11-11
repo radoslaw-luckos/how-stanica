@@ -13,12 +13,12 @@
         align-items: center;
         justify-content: flex-start;
         width: 100%;
-        margin-bottom: $big;
+        margin-bottom: $big-mobile;
     }
     .heroImage{
         width: 100vw;
         height: 250px;
-        margin: $big 0;
+        margin: $big-mobile 0;
     }
     .offerList {
         width: 90%;

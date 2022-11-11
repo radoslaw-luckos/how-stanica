@@ -1,17 +1,29 @@
 @import '../variables.scss';
 
 .TextBox {
-    margin-bottom: $big;
-    margin-inline: 0;
-    max-width: 90%;
+    margin-bottom: $big-mobile;
+    padding-inline: auto;
+    width: 100%;
     font-size: 12px;
     text-align: justify;
     p{
-        margin-bottom: $small;
+        margin-bottom: $small-mobile;
     }
 }
 .TextBoxWithBg{
-    padding: $big;
+    padding: $big-mobile;
     background-color:$white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 576px) { 
+    .TextBox {
+        font-size: 16px;
+    }  
+}
+@media (min-width: 1201px) { 
+    .TextBox {
+        font-size: 20px;
+
+    }  
 }

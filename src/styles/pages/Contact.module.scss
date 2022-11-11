@@ -12,20 +12,20 @@
     }
     .contactInfoBox{
         width: 90%;
-        margin: $big auto;
+        margin: $big-mobile auto;
         background: #FFFFFF;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
-        padding: $big;
+        padding: $big-mobile;
         h2{
             font-size: 20px;
-            margin-bottom: $small;
+            margin-bottom: $small-mobile;
         }
         .contactInfo{
             display: flex;
             align-items: center;
-            margin: $small;
+            margin: $small-mobile;
             p{
-                margin-left: $small;
+                margin-left: $small-mobile;
                 span{
                     display: block;
                 }
@@ -36,13 +36,13 @@
         width: 90%;
         .inputContainer{
             width: 100%;
-            margin-bottom: $big;
+            margin-bottom: $big-mobile;
             margin-top: 0;
             .labelBox {
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
-                margin-bottom: $small;
+                margin-bottom: $small-mobile;
                 min-width: 100%;
                 .labelImage{
                     height:20px;
@@ -50,7 +50,7 @@
                 }
                 label{
                     width: 100%;
-                    margin-left: $small;
+                    margin-left: $small-mobile;
                 }
             }
             input, textarea {
@@ -60,7 +60,7 @@
                 outline: none;
                 border: none;
                 box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.3);
-                padding-left: $small;
+                padding-left: $small-mobile;
                 resize: none;
                 font-size: 1rem;
             }
@@ -69,8 +69,8 @@
             width: 50%;
             background-color: $blue;
             border: 2px solid black;
-            margin-bottom: $big;
-            padding: $small 0;
+            margin-bottom: $big-mobile;
+            padding: $small-mobile 0;
             font-weight: $font-bold;
             margin-left: 50%;
             transform: translateX(-50%);
@@ -79,7 +79,7 @@
     }
     .banner {
         width: 90%;
-        margin-bottom: $big;
+        margin-bottom: $big-mobile;
         .bannerImage {
             width: 100%;
             height: auto;

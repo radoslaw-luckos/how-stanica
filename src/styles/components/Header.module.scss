@@ -2,10 +2,8 @@
 
 .HeaderWithBlueUnderline {
     position: relative;
-    margin-left: calc($big + 8px);
-    margin-right: auto;
-    margin-bottom: $big;
-    margin-top: $big;
+    margin-bottom: $big-mobile;
+    margin-top: $big-mobile;
     h1{
         position: relative;
         font-family: $font-headers,cursive;
@@ -22,4 +20,29 @@
         height: 10px;
         background-color: $blue;
     }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .HeaderWithBlueUnderline {
+        h1{
+            font-size: 24px;
+        }
+    }  
+}
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {  }
+
+// // Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .HeaderWithBlueUnderline {
+        h1{
+            font-size: 32px;
+        }
+    } 
 }

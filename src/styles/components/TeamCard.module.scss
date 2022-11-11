@@ -9,12 +9,12 @@
     justify-content: center;
     flex-flow: column nowrap;
     box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: calc(2 * $big);
+    margin-bottom: calc(2 * $big-mobile);
     cursor: pointer;
     h3 {
         font-size: 12px;
         font-weight: bold;
-        margin: $small;
+        margin: $small-mobile;
         text-align: center;
     }
     p {
