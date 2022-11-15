@@ -24,7 +24,7 @@ const NewsListItem = ({ title, imageUrl, text, isReversed }: Props) => {
       <div className={styles.outerWrapper}>
       <div className={styles.innerWrapper}>
         <Image src={imageUrl} alt={title} width={100} height={100} className={styles.image}/>
-        <div>
+        <div className={styles.content}>
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.text}>{text}</p>
         </div>

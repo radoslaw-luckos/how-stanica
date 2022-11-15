@@ -41,8 +41,12 @@
 // // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
     .HeaderWithBlueUnderline {
+        margin-left: 8px;
         h1{
-            font-size: 32px;
+            font-size: 40px;
+        }
+        &::before{
+            height: 20px;
         }
     } 
 }

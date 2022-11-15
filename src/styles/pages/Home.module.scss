@@ -98,15 +98,14 @@
 
 @media (min-width: 1200px) { 
     .innerWrapper {
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-around;
         .welcome{
             position: relative;
-            margin-top: 170px;
-            width: 55%;
+            margin-top: 100px;
             article {
                 z-index: 10;
-                max-width: 600px;
+                max-width: 600px!important;
             }
             .welcomeImage{
                 display: block;
@@ -114,7 +113,7 @@
                 z-index: 0;
                 width: 100%;
                 left: 100%;
-                top: -160px;
+                top: -108px;
                 img{
                     height: 455px;
                     width: 304px;

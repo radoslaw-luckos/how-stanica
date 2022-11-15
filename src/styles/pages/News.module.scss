@@ -2,21 +2,114 @@
 
 .innerWrapper{
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: flex-start;
+    flex-flow: row nowrap;
     height: calc(100vh - 70px - 40px);
+    width: 100%;
     overflow: auto;
+    .news {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        .list {
+            width: 90%;
+        }    
+        .loadMoreBtn {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            margin: 20px;
+            cursor: pointer;
+        }
+    }
+    .photo {
+        display: none;
+    }
 }
 
-.list {
-    width: 90%;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .innerWrapper{
+        .news {
+            .list {
+                width: 80%;
+            }
+        }
+    }
 }
 
-.loadMoreBtn {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    margin: 20px;
-    cursor: pointer;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .innerWrapper{
+        align-items: center;
+        justify-content: space-between;
+        .news {
+            width: 70%;
+            .list {
+                width: 80%;
+            }
+        }
+        .photo {
+            display: block;
+            width: 200px;
+            height: 80%;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 150px;
+                height: 150px;
+                transform: translate(-50%, -50%);background-image: url('../../assets/icons/waves.svg');
+                background-position: center;
+                background-size: contain;
+                z-index: 0;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+            }
+        }
+    }
 }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .innerWrapper .photo::before{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .innerWrapper{
+        .news {
+            width: 60%;
+            .list {
+                width: 80%;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+            }
+        }   
+        .photo {
+            display: block;
+            width: 400px;
+            height: 90%;
+            &::before{
+                width:500px;
+                height:500px;
+            }
+        }
+    }
+}
+
+

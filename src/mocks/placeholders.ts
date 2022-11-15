@@ -40,7 +40,7 @@ export const newsList: News[] = [
     },
     {
         imageUrl: 'https://images.unsplash.com/photo-1568518951277-0227d2eeb517?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHNhaWxpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-        title: 'Suspendisse tellus risus sollicitudin a vel',
+        title: 'Suspendisse tellus risus sol',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nisl in lectus accumsan sollicitudin a vel nunc. Ut et nulla non velit interdum interdum eu et felis. Nam nibh risus, suscipit vitae condimentum in, porta et dolor. In condimentum lobortis risus, a semper felis accumsan vitae. In hac habitasse platea dictumst. Nam interdum erat dui, pharetra finibus erat lacinia eget. Vestibulum ac dolor eget massa gravida elementum nec eu nunc. '
     },
     {
@@ -55,7 +55,7 @@ export const newsList: News[] = [
     },
     {
         imageUrl: 'https://images.unsplash.com/photo-1470645792662-dd18394f8c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
-        title: 'In hac habitasse platea dictumst',
+        title: 'In hac habitasse platea ',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nisl in lectus accumsan sollicitudin a vel nunc. Ut et nulla non velit interdum interdum eu et felis. Nam nibh risus, suscipit vitae condimentum in, porta et dolor. In condimentum lobortis risus, a semper felis accumsan vitae. In hac habitasse platea dictumst. Nam interdum erat dui, pharetra finibus erat lacinia eget. Vestibulum ac dolor eget massa gravida elementum nec eu nunc. '
     },
 ]

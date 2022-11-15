@@ -23,7 +23,9 @@
 }
 @media (min-width: 1201px) { 
     .TextBox {
-        font-size: 20px;
-
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        padding: $big-desktop;
     }  
 }
