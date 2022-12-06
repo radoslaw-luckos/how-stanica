@@ -92,21 +92,28 @@
 @media (min-width: 1200px) { 
     .innerWrapper{
         .news {
-            width: 60%;
+            width: 70%;
+            height: calc(100vh - 70px - 54px);
             .list {
                 width: 80%;
                 display: flex;
                 flex-flow: column nowrap;
                 align-items: center;
+                overflow: auto;
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+                &::-webkit-scrollbar{
+                    display:none; /* Chrome */
+                }
             }
         }   
         .photo {
             display: block;
             width: 400px;
-            height: 90%;
+            height: 80%;
             &::before{
-                width:500px;
-                height:500px;
+                width:300px;
+                height:300px;
             }
         }
     }

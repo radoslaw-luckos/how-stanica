@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
-import NewsListItem from '../src/components/Cards/NewsListItem'
-import Header from '../src/components/Header/Header'
-import styles from '../src/styles/Pages/News.module.scss'
-import { newsList } from '../src/mocks/placeholders'
-import MoreIcon from '../src/assets/icons/more.svg'
-import WavesIcon from '../src/assets/icons/waves.svg'
-import NewsPhoto from '../src/assets/images/news.jpg'
+import NewsListItem from '../../src/components/Cards/NewsListItem'
+import Header from '../../src/components/Header/Header'
+import styles from '../../src/styles/Pages/News.module.scss'
+import { newsList } from '../../src/mocks/placeholders'
+import MoreIcon from '../../src/assets/icons/more.svg'
+import NewsPhoto from '../../src/assets/images/news.jpg'
 import Image from 'next/future/image';
 
 const NewsPage: NextPage = () => {

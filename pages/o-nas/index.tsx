@@ -25,19 +25,22 @@ const AboutPage: NextPage = () => {
   return (
     <main className={styles.innerWrapper}>
       
-      <section>
+      <section className={styles.fewWordsSection}>
         <Header title='Kilka słów o ośrodku' /> 
-        <Image
-          src={aboutHero}
-          alt='HOW Stanica'
-          width={300} height={300}
-          className={styles.heroImage}
-        />
+        <div className={styles.heroImage}>
+          <Image
+            src={aboutHero}
+            alt='HOW Stanica'
+            width={300} height={300}
+          />
+          <div className={styles.dotsVer}></div>
+          <div className={styles.dotsHor}></div>
+        </div>
         <TextBox withBackground content={aboutContent}/>
       </section>
       
       
-      <section>
+      <section className={styles.staffSection}>
         <Header title='Kadra ośrodka' />
         <motion.div className={styles.carousel} ref={carousel} whileTap={{cursor:'grabbing'}}>
           <motion.div
@@ -58,9 +61,9 @@ const AboutPage: NextPage = () => {
       </section>      
       
 
-      <section>
+      <section className={styles.teamsSection}>
         <Header title='Nasze drużyny' /> 
-        <ul>
+        <ul className={styles.teamsList}>
           <TeamCard id='32-wdh-ekisana' name='32. Wrocławska Wodna Drużyna Harcerska "Ekisana"' logo={teamsImages[0]} minAge={10} maxAge={12} />
           <TeamCard id='32-wrwdsh-pegaz' name='32. Wrocławska Wodna Drużyna Staszoharcerska "Pegaz"' logo={teamsImages[1]} minAge={13} maxAge={15} />
           <TeamCard id='32-wgz-dzielne-hefalumpy' name='32. Wrocławska Wodna Gromada Zuchowa "Dzielne Hefalumpy"' logo={teamsImages[2]} minAge={7} maxAge={9} />

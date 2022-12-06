@@ -22,3 +22,37 @@
         font-weight: normal;
     }
 }
+
+
+@media (min-width: 992px) {
+    .card {
+        width: 350px;
+        height: 420px;
+        img{
+            width: 250px;
+            height: 250px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+@media (min-width: 1201px) {
+    .card {
+        width: 400px;
+        height: 520px;
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}

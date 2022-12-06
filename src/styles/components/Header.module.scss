@@ -42,8 +42,10 @@
 @media (min-width: 1200px) { 
     .HeaderWithBlueUnderline {
         margin-left: 8px;
+        margin-bottom: $big-desktop;
+        margin-top: $big-desktop;
         h1{
-            font-size: 40px;
+            font-size: 36px;
         }
         &::before{
             height: 20px;
