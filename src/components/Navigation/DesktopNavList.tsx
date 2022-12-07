@@ -8,7 +8,7 @@ import HufiecLogo from '../../assets/icons/logo_hufiec.svg';
 
 const DesktopNavList = () => {
     return (
-      <div className={styles.desktopNavList}>
+    <div className={styles.desktopNavList}>
       <ul >
         <li>
           <Link href='/aktualnosci'>

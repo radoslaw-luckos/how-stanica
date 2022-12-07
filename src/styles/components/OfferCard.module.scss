@@ -9,12 +9,19 @@
     justify-content: center;
     flex-flow: column nowrap;
     box-shadow: 0px 6px 10px 10px rgba(0, 0, 0, 0.3);
-    margin: $big-mobile 0;
+    margin: $big-mobile;
     cursor: pointer;
     p {
         font-size: 12px;
         padding: 0 $small-mobile;
+        padding-top: $small-mobile;
         font-weight: normal;
         text-align: center !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .card{
+        margin: $big-desktop;
     }
 }

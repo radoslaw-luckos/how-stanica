@@ -15,36 +15,44 @@ const OfferPage: NextPage = () => {
     return (
       <main className={styles.innerWrapper}>
         <section>
-        <Header title='Kilka słów o ośrodku' /> 
-        <TextBox content={offer1}/>      
-        <TextBox withBackground content={offer2}/>      
-        <Image
-          src={offerHero}
-          alt='HOW Stanica'
-          width={300} height={300}
-          className={styles.heroImage}
-        />      
-        <ul className={styles.offerList}>
-            <p>Nasz ośrodek ma w swojej szerokiej ofercie:</p>
-            <OfferCard
-              content='Sprzęt wodny: Omegi, Optymisty, Motorówki, łodzie wiosłowe'
-              icon={boatIcon}
-            />
-            <OfferCard
-              content='Sprzęt obozowy: namioty, kanadyjki, kuchnie polowe, itp.'
-              icon={campIcon}
-            />
-            <OfferCard
-              content='Młodą, wykwalifikowaną kadrę'
-              icon={peopleIcon}
-            />
-            <OfferCard
-              content='Zaplecze magazynowe i doświadczenie w naprawianiu jednostek pływających'
-              icon={toolsIcon}
-            />
-            <p>W sprawie pytań  o dostępność prosimy o kontakt z naszym komendantem ośrodka phm Rafałem Rumianowskim pod adresem e-mail: <strong>rafal.rumianowski@zhp.net.pl</strong></p>
-        </ul>
-      </section>
+          <Header title='Nasza oferta' /> 
+          <TextBox content={offer1} />    
+          <div className={styles.servicesBox}>
+            <TextBox withBackground content={offer2}/>      
+          </div> 
+          <div className={styles.heroImage}>
+            <Image
+            src={offerHero}
+            alt='HOW Stanica'
+            width={300} height={300}            
+            /> 
+          </div>
+           
+        </section>
+        <section>
+          <div className={styles.offerList}>
+            <TextBox content={'Nasz ośrodek posiada szeroką gamę sprzętu wodnego i obozowego wraz z zapleczem. W swojej szerokiej ofercie mamy:'} />
+            <ul>
+              <OfferCard
+                content='Sprzęt wodny: Omegi, Optymisty, Motorówki, łodzie wiosłowe'
+                icon={boatIcon}
+              />
+              <OfferCard
+                content='Sprzęt obozowy: namioty, kanadyjki, kuchnie polowe, itp.'
+                icon={campIcon}
+              />
+              <OfferCard
+                content='Młodą, wykwalifikowaną kadrę'
+                icon={peopleIcon}
+              />
+              <OfferCard
+                content='Zaplecze magazynowe i doświadczenie w naprawianiu jednostek pływających'
+                icon={toolsIcon}
+              />
+            </ul>              
+            <TextBox content={'W sprawie pytań  o dostępność prosimy o kontakt z naszym komendantem ośrodka phm Rafałem Rumianowskim pod adresem e-mail: <strong>rafal.rumianowski@zhp.net.pl</strong>'}/>
+          </div>
+        </section>
       </main>  
 )
 }

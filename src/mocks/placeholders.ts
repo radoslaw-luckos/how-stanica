@@ -7,7 +7,7 @@ export const aboutContent: string = `
 
 export const offer1: string = `
 <p>Nasz ośrodek łączy pasje i pokolenia. Infrastruktura jest wykorzystana w głównej mierze na cele statutowe <strong>Związku Harcerstwa Polskiego </strong>, ale jesteśmy też otwarci na zewnętrzne inicjatywy.  
-Jeżeli chcesz wstąpić w szeregi “wodniaków” - sprawdź naszą <strong>zakładkę “O nas”</strong>. Tam znajdziesz opis i kontakt do opiekunów i instruktorów, którzy prowadzą poszczególne jednostki. </p><p>Nasz ośrodek świetnie się sprawdza przy organizacji: </p>
+<br> Jeżeli chcesz wstąpić w szeregi “wodniaków” - sprawdź naszą <strong>zakładkę “O nas”</strong>. Tam znajdziesz opis i kontakt do opiekunów i instruktorów, którzy prowadzą poszczególne jednostki. </p><br><p>Nasz ośrodek świetnie się sprawdza przy organizacji: </p>
 
 `
 
